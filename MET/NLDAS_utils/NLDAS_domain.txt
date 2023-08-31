@@ -1,0 +1,2 @@
+# to download data on GESDISC
+-106.947, 38.920, -106.945, 38.925

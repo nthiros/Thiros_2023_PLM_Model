@@ -1,0 +1,13 @@
+This directory performs and processes the ParFlow-CLM runs used in the Monte Carlo analysis in Thiros et. al. 2023 (GRL).
+
+Directories:
+  MET - contains the forcing files for ParFlow-CLM
+  Training_Set - contains all the needed input files for the ensemble of ParFlow-CLM runs
+  ic_spinup - generates the initial conditions used to initialize the ParFlow-CLM spinups
+  wl_montecarlo - contains (abbreviated) outputs from the 128 ParFlow-CLM ensemble used in Thiros et. al. 2023 (GRL). This can be re-created with the python scripts and re-running ParFlow-CLM
+
+Files:
+  make_cake_sobol.py - generates ParFlow-CLM input decks (stored in Training_Set) using the quasi-random sobol sampling
+  run_training.0-15.sc - runs ParFlow-CLM in serial
+  run_outscripts.sc - processes the ParFlow-CLM outputs
+  plot_wl.ensemble.py - script to generate plots

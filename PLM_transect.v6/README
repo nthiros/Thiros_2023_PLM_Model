@@ -1,0 +1,13 @@
+This directory performs and processes the ParFlow-CLM and EcoSLIM runs used in Thiros et. al. 2023 (GRL).
+
+Directories:
+  MET - contains the forcing files for ParFlow-CLM
+  ic_spinup - generates the initial conditions used to initialize the ParFlow-CLM spinups
+  ER_PLM_ParFlow - holds processing and utility scripts
+  clm_inputs - ParFlow-CLM input files
+  
+Run Directory to Match Thiros et. al. 2023 (GRL)
+  base = Run.wl.tetsu22.sh
+  A1, A2, A3, A4, A5 = Run.wl.127.sh, Run.wl.82.sh, Run.wl.104.sh, Run.wl.37.sh, Run.wl.101.sh
+  
+

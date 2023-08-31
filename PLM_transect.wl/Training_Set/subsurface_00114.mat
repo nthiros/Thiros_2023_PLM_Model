@@ -1,0 +1,574 @@
+#Material Property Information
+
+#-------------------------
+# Variable dz Assignment
+#-------------------------
+pfset Solver.Nonlinear.VariableDz       True
+pfset dzScale.GeomNames                 domain
+pfset dzScale.Type                      nzList
+pfset dzScale.nzListNumber		32
+
+pfset Cell.0.dzScale.Value		1.0
+pfset Cell.1.dzScale.Value		1.0
+pfset Cell.2.dzScale.Value		1.0
+pfset Cell.3.dzScale.Value		1.0
+pfset Cell.4.dzScale.Value		1.0
+pfset Cell.5.dzScale.Value		0.8
+pfset Cell.6.dzScale.Value		0.8
+pfset Cell.7.dzScale.Value		0.6
+pfset Cell.8.dzScale.Value		0.6
+pfset Cell.9.dzScale.Value		0.4
+pfset Cell.10.dzScale.Value		0.4
+pfset Cell.11.dzScale.Value		0.2
+pfset Cell.12.dzScale.Value		0.2
+pfset Cell.13.dzScale.Value		0.2
+pfset Cell.14.dzScale.Value		0.1
+pfset Cell.15.dzScale.Value		0.1
+pfset Cell.16.dzScale.Value		0.1
+pfset Cell.17.dzScale.Value		0.05
+pfset Cell.18.dzScale.Value		0.05
+pfset Cell.19.dzScale.Value		0.05
+pfset Cell.20.dzScale.Value		0.05
+pfset Cell.21.dzScale.Value		0.05
+pfset Cell.22.dzScale.Value		0.05
+pfset Cell.23.dzScale.Value		0.05
+pfset Cell.24.dzScale.Value		0.05
+pfset Cell.25.dzScale.Value		0.05
+pfset Cell.26.dzScale.Value		0.05
+pfset Cell.27.dzScale.Value		0.05
+pfset Cell.28.dzScale.Value		0.05
+pfset Cell.29.dzScale.Value		0.05
+pfset Cell.30.dzScale.Value		0.025
+pfset Cell.31.dzScale.Value		0.025
+
+#-------------------------
+# Indicator Geometry Input
+#-------------------------
+set indlist "i1 i2 i3 i4 i5 i6 i7 i8 i9 i10 i11 i12 i13 i14 i15 i16 i17 i18 i19 i20 i21 i22 i23 i24 i25 i26 i27 i28 i29 i30 i31 i32"
+
+pfset GeomInput.indi_input.InputType      IndicatorField
+pfset GeomInput.indi_input.GeomNames      $indlist
+pfset Geom.indi_input.FileName            $ind_fname
+
+pfset GeomInput.i1.Value		1
+pfset GeomInput.i2.Value		2
+pfset GeomInput.i3.Value		3
+pfset GeomInput.i4.Value		4
+pfset GeomInput.i5.Value		5
+pfset GeomInput.i6.Value		6
+pfset GeomInput.i7.Value		7
+pfset GeomInput.i8.Value		8
+pfset GeomInput.i9.Value		9
+pfset GeomInput.i10.Value		10
+pfset GeomInput.i11.Value		11
+pfset GeomInput.i12.Value		12
+pfset GeomInput.i13.Value		13
+pfset GeomInput.i14.Value		14
+pfset GeomInput.i15.Value		15
+pfset GeomInput.i16.Value		16
+pfset GeomInput.i17.Value		17
+pfset GeomInput.i18.Value		18
+pfset GeomInput.i19.Value		19
+pfset GeomInput.i20.Value		20
+pfset GeomInput.i21.Value		21
+pfset GeomInput.i22.Value		22
+pfset GeomInput.i23.Value		23
+pfset GeomInput.i24.Value		24
+pfset GeomInput.i25.Value		25
+pfset GeomInput.i26.Value		26
+pfset GeomInput.i27.Value		27
+pfset GeomInput.i28.Value		28
+pfset GeomInput.i29.Value		29
+pfset GeomInput.i30.Value		30
+pfset GeomInput.i31.Value		31
+pfset GeomInput.i32.Value		32
+
+#-------------------------
+# Permeability
+#-------------------------
+pfset Geom.Perm.Names                  "domain $indlist"
+
+pfset Geom.domain.Perm.Type             Constant
+pfset Geom.domain.Perm.Value            0.01
+
+pfset Geom.i1.Perm.Type 		 Constant
+pfset Geom.i1.Perm.Value 		 1.2252936217
+
+pfset Geom.i2.Perm.Type 		 Constant
+pfset Geom.i2.Perm.Value 		 1.2252936217
+
+pfset Geom.i3.Perm.Type 		 Constant
+pfset Geom.i3.Perm.Value 		 1.2252936217
+
+pfset Geom.i4.Perm.Type 		 Constant
+pfset Geom.i4.Perm.Value 		 0.0577282997
+
+pfset Geom.i5.Perm.Type 		 Constant
+pfset Geom.i5.Perm.Value 		 0.0577282997
+
+pfset Geom.i6.Perm.Type 		 Constant
+pfset Geom.i6.Perm.Value 		 0.0577282997
+
+pfset Geom.i7.Perm.Type 		 Constant
+pfset Geom.i7.Perm.Value 		 0.0577282997
+
+pfset Geom.i8.Perm.Type 		 Constant
+pfset Geom.i8.Perm.Value 		 0.0577282997
+
+pfset Geom.i9.Perm.Type 		 Constant
+pfset Geom.i9.Perm.Value 		 0.0577282997
+
+pfset Geom.i10.Perm.Type 		 Constant
+pfset Geom.i10.Perm.Value 		 0.0021949006
+
+pfset Geom.i11.Perm.Type 		 Constant
+pfset Geom.i11.Perm.Value 		 0.0021949006
+
+pfset Geom.i12.Perm.Type 		 Constant
+pfset Geom.i12.Perm.Value 		 0.0021949006
+
+pfset Geom.i13.Perm.Type 		 Constant
+pfset Geom.i13.Perm.Value 		 0.0021949006
+
+pfset Geom.i14.Perm.Type 		 Constant
+pfset Geom.i14.Perm.Value 		 0.0021949006
+
+pfset Geom.i15.Perm.Type 		 Constant
+pfset Geom.i15.Perm.Value 		 0.0021949006
+
+pfset Geom.i16.Perm.Type 		 Constant
+pfset Geom.i16.Perm.Value 		 0.0021949006
+
+pfset Geom.i17.Perm.Type 		 Constant
+pfset Geom.i17.Perm.Value 		 0.0021949006
+
+pfset Geom.i18.Perm.Type 		 Constant
+pfset Geom.i18.Perm.Value 		 0.0021949006
+
+pfset Geom.i19.Perm.Type 		 Constant
+pfset Geom.i19.Perm.Value 		 0.0021949006
+
+pfset Geom.i20.Perm.Type 		 Constant
+pfset Geom.i20.Perm.Value 		 0.0021949006
+
+pfset Geom.i21.Perm.Type 		 Constant
+pfset Geom.i21.Perm.Value 		 0.0021949006
+
+pfset Geom.i22.Perm.Type 		 Constant
+pfset Geom.i22.Perm.Value 		 0.0021949006
+
+pfset Geom.i23.Perm.Type 		 Constant
+pfset Geom.i23.Perm.Value 		 0.0021949006
+
+pfset Geom.i24.Perm.Type 		 Constant
+pfset Geom.i24.Perm.Value 		 0.0021949006
+
+pfset Geom.i25.Perm.Type 		 Constant
+pfset Geom.i25.Perm.Value 		 0.0021949006
+
+pfset Geom.i26.Perm.Type 		 Constant
+pfset Geom.i26.Perm.Value 		 0.0021949006
+
+pfset Geom.i27.Perm.Type 		 Constant
+pfset Geom.i27.Perm.Value 		 0.0021949006
+
+pfset Geom.i28.Perm.Type 		 Constant
+pfset Geom.i28.Perm.Value 		 0.0021949006
+
+pfset Geom.i29.Perm.Type 		 Constant
+pfset Geom.i29.Perm.Value 		 0.0021949006
+
+pfset Geom.i30.Perm.Type 		 Constant
+pfset Geom.i30.Perm.Value 		 0.0021949006
+
+pfset Geom.i31.Perm.Type 		 Constant
+pfset Geom.i31.Perm.Value 		 0.0021949006
+
+pfset Geom.i32.Perm.Type 		 Constant
+pfset Geom.i32.Perm.Value 		 0.0021949006
+
+
+#-------------------------
+# Porosity
+#-------------------------
+pfset Geom.Porosity.GeomNames          "domain $indlist"
+
+pfset Geom.domain.Porosity.Type  		 Constant
+pfset Geom.domain.Porosity.Value 		 0.3
+
+pfset Geom.i1.Porosity.Type 		 Constant
+pfset Geom.i1.Porosity.Value 		 0.40000
+
+pfset Geom.i2.Porosity.Type 		 Constant
+pfset Geom.i2.Porosity.Value 		 0.40000
+
+pfset Geom.i3.Porosity.Type 		 Constant
+pfset Geom.i3.Porosity.Value 		 0.40000
+
+pfset Geom.i4.Porosity.Type 		 Constant
+pfset Geom.i4.Porosity.Value 		 0.20000
+
+pfset Geom.i5.Porosity.Type 		 Constant
+pfset Geom.i5.Porosity.Value 		 0.20000
+
+pfset Geom.i6.Porosity.Type 		 Constant
+pfset Geom.i6.Porosity.Value 		 0.20000
+
+pfset Geom.i7.Porosity.Type 		 Constant
+pfset Geom.i7.Porosity.Value 		 0.20000
+
+pfset Geom.i8.Porosity.Type 		 Constant
+pfset Geom.i8.Porosity.Value 		 0.20000
+
+pfset Geom.i9.Porosity.Type 		 Constant
+pfset Geom.i9.Porosity.Value 		 0.20000
+
+pfset Geom.i10.Porosity.Type 		 Constant
+pfset Geom.i10.Porosity.Value 		 0.10000
+
+pfset Geom.i11.Porosity.Type 		 Constant
+pfset Geom.i11.Porosity.Value 		 0.10000
+
+pfset Geom.i12.Porosity.Type 		 Constant
+pfset Geom.i12.Porosity.Value 		 0.10000
+
+pfset Geom.i13.Porosity.Type 		 Constant
+pfset Geom.i13.Porosity.Value 		 0.10000
+
+pfset Geom.i14.Porosity.Type 		 Constant
+pfset Geom.i14.Porosity.Value 		 0.10000
+
+pfset Geom.i15.Porosity.Type 		 Constant
+pfset Geom.i15.Porosity.Value 		 0.10000
+
+pfset Geom.i16.Porosity.Type 		 Constant
+pfset Geom.i16.Porosity.Value 		 0.10000
+
+pfset Geom.i17.Porosity.Type 		 Constant
+pfset Geom.i17.Porosity.Value 		 0.10000
+
+pfset Geom.i18.Porosity.Type 		 Constant
+pfset Geom.i18.Porosity.Value 		 0.10000
+
+pfset Geom.i19.Porosity.Type 		 Constant
+pfset Geom.i19.Porosity.Value 		 0.10000
+
+pfset Geom.i20.Porosity.Type 		 Constant
+pfset Geom.i20.Porosity.Value 		 0.10000
+
+pfset Geom.i21.Porosity.Type 		 Constant
+pfset Geom.i21.Porosity.Value 		 0.10000
+
+pfset Geom.i22.Porosity.Type 		 Constant
+pfset Geom.i22.Porosity.Value 		 0.10000
+
+pfset Geom.i23.Porosity.Type 		 Constant
+pfset Geom.i23.Porosity.Value 		 0.10000
+
+pfset Geom.i24.Porosity.Type 		 Constant
+pfset Geom.i24.Porosity.Value 		 0.10000
+
+pfset Geom.i25.Porosity.Type 		 Constant
+pfset Geom.i25.Porosity.Value 		 0.10000
+
+pfset Geom.i26.Porosity.Type 		 Constant
+pfset Geom.i26.Porosity.Value 		 0.10000
+
+pfset Geom.i27.Porosity.Type 		 Constant
+pfset Geom.i27.Porosity.Value 		 0.10000
+
+pfset Geom.i28.Porosity.Type 		 Constant
+pfset Geom.i28.Porosity.Value 		 0.10000
+
+pfset Geom.i29.Porosity.Type 		 Constant
+pfset Geom.i29.Porosity.Value 		 0.10000
+
+pfset Geom.i30.Porosity.Type 		 Constant
+pfset Geom.i30.Porosity.Value 		 0.10000
+
+pfset Geom.i31.Porosity.Type 		 Constant
+pfset Geom.i31.Porosity.Value 		 0.10000
+
+pfset Geom.i32.Porosity.Type 		 Constant
+pfset Geom.i32.Porosity.Value 		 0.10000
+
+
+#-------------------------
+# Relative Permeability
+#-------------------------
+pfset Phase.RelPerm.Type                  VanGenuchten
+pfset Phase.RelPerm.GeomNames             "domain $indlist"
+
+pfset Geom.domain.RelPerm.Alpha 		 3.5
+pfset Geom.domain.RelPerm.N     		 2.0
+
+pfset Geom.i1.RelPerm.Alpha 		 3.40252
+pfset Geom.i1.RelPerm.N 		 4.56737
+
+pfset Geom.i2.RelPerm.Alpha 		 3.40252
+pfset Geom.i2.RelPerm.N 		 4.56737
+
+pfset Geom.i3.RelPerm.Alpha 		 3.40252
+pfset Geom.i3.RelPerm.N 		 4.56737
+
+pfset Geom.i4.RelPerm.Alpha 		 3.11521
+pfset Geom.i4.RelPerm.N 		 2.40612
+
+pfset Geom.i5.RelPerm.Alpha 		 3.11521
+pfset Geom.i5.RelPerm.N 		 2.40612
+
+pfset Geom.i6.RelPerm.Alpha 		 3.11521
+pfset Geom.i6.RelPerm.N 		 2.40612
+
+pfset Geom.i7.RelPerm.Alpha 		 3.11521
+pfset Geom.i7.RelPerm.N 		 2.40612
+
+pfset Geom.i8.RelPerm.Alpha 		 3.11521
+pfset Geom.i8.RelPerm.N 		 2.40612
+
+pfset Geom.i9.RelPerm.Alpha 		 3.11521
+pfset Geom.i9.RelPerm.N 		 2.40612
+
+pfset Geom.i10.RelPerm.Alpha 		 0.51900
+pfset Geom.i10.RelPerm.N 		 1.59500
+
+pfset Geom.i11.RelPerm.Alpha 		 0.51900
+pfset Geom.i11.RelPerm.N 		 1.59500
+
+pfset Geom.i12.RelPerm.Alpha 		 0.51900
+pfset Geom.i12.RelPerm.N 		 1.59500
+
+pfset Geom.i13.RelPerm.Alpha 		 0.51900
+pfset Geom.i13.RelPerm.N 		 1.59500
+
+pfset Geom.i14.RelPerm.Alpha 		 0.51900
+pfset Geom.i14.RelPerm.N 		 1.59500
+
+pfset Geom.i15.RelPerm.Alpha 		 0.51900
+pfset Geom.i15.RelPerm.N 		 1.59500
+
+pfset Geom.i16.RelPerm.Alpha 		 0.51900
+pfset Geom.i16.RelPerm.N 		 1.59500
+
+pfset Geom.i17.RelPerm.Alpha 		 0.51900
+pfset Geom.i17.RelPerm.N 		 1.59500
+
+pfset Geom.i18.RelPerm.Alpha 		 0.51900
+pfset Geom.i18.RelPerm.N 		 1.59500
+
+pfset Geom.i19.RelPerm.Alpha 		 0.51900
+pfset Geom.i19.RelPerm.N 		 1.59500
+
+pfset Geom.i20.RelPerm.Alpha 		 0.51900
+pfset Geom.i20.RelPerm.N 		 1.59500
+
+pfset Geom.i21.RelPerm.Alpha 		 0.51900
+pfset Geom.i21.RelPerm.N 		 1.59500
+
+pfset Geom.i22.RelPerm.Alpha 		 0.51900
+pfset Geom.i22.RelPerm.N 		 1.59500
+
+pfset Geom.i23.RelPerm.Alpha 		 0.51900
+pfset Geom.i23.RelPerm.N 		 1.59500
+
+pfset Geom.i24.RelPerm.Alpha 		 0.51900
+pfset Geom.i24.RelPerm.N 		 1.59500
+
+pfset Geom.i25.RelPerm.Alpha 		 0.51900
+pfset Geom.i25.RelPerm.N 		 1.59500
+
+pfset Geom.i26.RelPerm.Alpha 		 0.51900
+pfset Geom.i26.RelPerm.N 		 1.59500
+
+pfset Geom.i27.RelPerm.Alpha 		 0.51900
+pfset Geom.i27.RelPerm.N 		 1.59500
+
+pfset Geom.i28.RelPerm.Alpha 		 0.51900
+pfset Geom.i28.RelPerm.N 		 1.59500
+
+pfset Geom.i29.RelPerm.Alpha 		 0.51900
+pfset Geom.i29.RelPerm.N 		 1.59500
+
+pfset Geom.i30.RelPerm.Alpha 		 0.51900
+pfset Geom.i30.RelPerm.N 		 1.59500
+
+pfset Geom.i31.RelPerm.Alpha 		 0.51900
+pfset Geom.i31.RelPerm.N 		 1.59500
+
+pfset Geom.i32.RelPerm.Alpha 		 0.51900
+pfset Geom.i32.RelPerm.N 		 1.59500
+
+
+#-------------------------
+# Saturation Functionn
+#-------------------------
+pfset Phase.Saturation.Type                  VanGenuchten
+pfset Phase.Saturation.GeomNames             "domain $indlist"
+
+pfset Geom.domain.Saturation.Alpha           3.5
+pfset Geom.domain.Saturation.N               2.0
+pfset Geom.domain.Saturation.SRes            0.2
+pfset Geom.domain.Saturation.SSat            1.0
+
+pfset Geom.i1.Saturation.Alpha 		 3.40252
+pfset Geom.i1.Saturation.N 		 4.56737
+pfset Geom.i1.Saturation.SRes 		 0.13100
+pfset Geom.i1.Saturation.SSat 		 1.00000
+
+pfset Geom.i2.Saturation.Alpha 		 3.40252
+pfset Geom.i2.Saturation.N 		 4.56737
+pfset Geom.i2.Saturation.SRes 		 0.13100
+pfset Geom.i2.Saturation.SSat 		 1.00000
+
+pfset Geom.i3.Saturation.Alpha 		 3.40252
+pfset Geom.i3.Saturation.N 		 4.56737
+pfset Geom.i3.Saturation.SRes 		 0.13100
+pfset Geom.i3.Saturation.SSat 		 1.00000
+
+pfset Geom.i4.Saturation.Alpha 		 3.11521
+pfset Geom.i4.Saturation.N 		 2.40612
+pfset Geom.i4.Saturation.SRes 		 0.04000
+pfset Geom.i4.Saturation.SSat 		 1.00000
+
+pfset Geom.i5.Saturation.Alpha 		 3.11521
+pfset Geom.i5.Saturation.N 		 2.40612
+pfset Geom.i5.Saturation.SRes 		 0.04000
+pfset Geom.i5.Saturation.SSat 		 1.00000
+
+pfset Geom.i6.Saturation.Alpha 		 3.11521
+pfset Geom.i6.Saturation.N 		 2.40612
+pfset Geom.i6.Saturation.SRes 		 0.04000
+pfset Geom.i6.Saturation.SSat 		 1.00000
+
+pfset Geom.i7.Saturation.Alpha 		 3.11521
+pfset Geom.i7.Saturation.N 		 2.40612
+pfset Geom.i7.Saturation.SRes 		 0.04000
+pfset Geom.i7.Saturation.SSat 		 1.00000
+
+pfset Geom.i8.Saturation.Alpha 		 3.11521
+pfset Geom.i8.Saturation.N 		 2.40612
+pfset Geom.i8.Saturation.SRes 		 0.04000
+pfset Geom.i8.Saturation.SSat 		 1.00000
+
+pfset Geom.i9.Saturation.Alpha 		 3.11521
+pfset Geom.i9.Saturation.N 		 2.40612
+pfset Geom.i9.Saturation.SRes 		 0.04000
+pfset Geom.i9.Saturation.SSat 		 1.00000
+
+pfset Geom.i10.Saturation.Alpha 		 0.51900
+pfset Geom.i10.Saturation.N 		 1.59500
+pfset Geom.i10.Saturation.SRes 		 0.00500
+pfset Geom.i10.Saturation.SSat 		 1.00000
+
+pfset Geom.i11.Saturation.Alpha 		 0.51900
+pfset Geom.i11.Saturation.N 		 1.59500
+pfset Geom.i11.Saturation.SRes 		 0.00500
+pfset Geom.i11.Saturation.SSat 		 1.00000
+
+pfset Geom.i12.Saturation.Alpha 		 0.51900
+pfset Geom.i12.Saturation.N 		 1.59500
+pfset Geom.i12.Saturation.SRes 		 0.00500
+pfset Geom.i12.Saturation.SSat 		 1.00000
+
+pfset Geom.i13.Saturation.Alpha 		 0.51900
+pfset Geom.i13.Saturation.N 		 1.59500
+pfset Geom.i13.Saturation.SRes 		 0.00500
+pfset Geom.i13.Saturation.SSat 		 1.00000
+
+pfset Geom.i14.Saturation.Alpha 		 0.51900
+pfset Geom.i14.Saturation.N 		 1.59500
+pfset Geom.i14.Saturation.SRes 		 0.00500
+pfset Geom.i14.Saturation.SSat 		 1.00000
+
+pfset Geom.i15.Saturation.Alpha 		 0.51900
+pfset Geom.i15.Saturation.N 		 1.59500
+pfset Geom.i15.Saturation.SRes 		 0.00500
+pfset Geom.i15.Saturation.SSat 		 1.00000
+
+pfset Geom.i16.Saturation.Alpha 		 0.51900
+pfset Geom.i16.Saturation.N 		 1.59500
+pfset Geom.i16.Saturation.SRes 		 0.00500
+pfset Geom.i16.Saturation.SSat 		 1.00000
+
+pfset Geom.i17.Saturation.Alpha 		 0.51900
+pfset Geom.i17.Saturation.N 		 1.59500
+pfset Geom.i17.Saturation.SRes 		 0.00500
+pfset Geom.i17.Saturation.SSat 		 1.00000
+
+pfset Geom.i18.Saturation.Alpha 		 0.51900
+pfset Geom.i18.Saturation.N 		 1.59500
+pfset Geom.i18.Saturation.SRes 		 0.00500
+pfset Geom.i18.Saturation.SSat 		 1.00000
+
+pfset Geom.i19.Saturation.Alpha 		 0.51900
+pfset Geom.i19.Saturation.N 		 1.59500
+pfset Geom.i19.Saturation.SRes 		 0.00500
+pfset Geom.i19.Saturation.SSat 		 1.00000
+
+pfset Geom.i20.Saturation.Alpha 		 0.51900
+pfset Geom.i20.Saturation.N 		 1.59500
+pfset Geom.i20.Saturation.SRes 		 0.00500
+pfset Geom.i20.Saturation.SSat 		 1.00000
+
+pfset Geom.i21.Saturation.Alpha 		 0.51900
+pfset Geom.i21.Saturation.N 		 1.59500
+pfset Geom.i21.Saturation.SRes 		 0.00500
+pfset Geom.i21.Saturation.SSat 		 1.00000
+
+pfset Geom.i22.Saturation.Alpha 		 0.51900
+pfset Geom.i22.Saturation.N 		 1.59500
+pfset Geom.i22.Saturation.SRes 		 0.00500
+pfset Geom.i22.Saturation.SSat 		 1.00000
+
+pfset Geom.i23.Saturation.Alpha 		 0.51900
+pfset Geom.i23.Saturation.N 		 1.59500
+pfset Geom.i23.Saturation.SRes 		 0.00500
+pfset Geom.i23.Saturation.SSat 		 1.00000
+
+pfset Geom.i24.Saturation.Alpha 		 0.51900
+pfset Geom.i24.Saturation.N 		 1.59500
+pfset Geom.i24.Saturation.SRes 		 0.00500
+pfset Geom.i24.Saturation.SSat 		 1.00000
+
+pfset Geom.i25.Saturation.Alpha 		 0.51900
+pfset Geom.i25.Saturation.N 		 1.59500
+pfset Geom.i25.Saturation.SRes 		 0.00500
+pfset Geom.i25.Saturation.SSat 		 1.00000
+
+pfset Geom.i26.Saturation.Alpha 		 0.51900
+pfset Geom.i26.Saturation.N 		 1.59500
+pfset Geom.i26.Saturation.SRes 		 0.00500
+pfset Geom.i26.Saturation.SSat 		 1.00000
+
+pfset Geom.i27.Saturation.Alpha 		 0.51900
+pfset Geom.i27.Saturation.N 		 1.59500
+pfset Geom.i27.Saturation.SRes 		 0.00500
+pfset Geom.i27.Saturation.SSat 		 1.00000
+
+pfset Geom.i28.Saturation.Alpha 		 0.51900
+pfset Geom.i28.Saturation.N 		 1.59500
+pfset Geom.i28.Saturation.SRes 		 0.00500
+pfset Geom.i28.Saturation.SSat 		 1.00000
+
+pfset Geom.i29.Saturation.Alpha 		 0.51900
+pfset Geom.i29.Saturation.N 		 1.59500
+pfset Geom.i29.Saturation.SRes 		 0.00500
+pfset Geom.i29.Saturation.SSat 		 1.00000
+
+pfset Geom.i30.Saturation.Alpha 		 0.51900
+pfset Geom.i30.Saturation.N 		 1.59500
+pfset Geom.i30.Saturation.SRes 		 0.00500
+pfset Geom.i30.Saturation.SSat 		 1.00000
+
+pfset Geom.i31.Saturation.Alpha 		 0.51900
+pfset Geom.i31.Saturation.N 		 1.59500
+pfset Geom.i31.Saturation.SRes 		 0.00500
+pfset Geom.i31.Saturation.SSat 		 1.00000
+
+pfset Geom.i32.Saturation.Alpha 		 0.51900
+pfset Geom.i32.Saturation.N 		 1.59500
+pfset Geom.i32.Saturation.SRes 		 0.00500
+pfset Geom.i32.Saturation.SSat 		 1.00000
+
+#END
+

@@ -1,0 +1,18 @@
+Download the NLDAS2 data 
+    https://disc.gsfc.nasa.gov/datasets/NLDAS_FORA0125_H_002/summary?keywords=NLDAS2
+    Use 'Subset/Get Data' 
+    Put in domain bounds: -106.947, 38.920, -106.945, 38.925
+    Generate download list txt file    
+
+Follow wget Instructrion on:
+    https://disc.gsfc.nasa.gov/data-access#mac_linux_wget
+    Note - Make sure you are logged into the website before wget command
+
+Get metadata from .grb file
+   wgrib -v file.grb
+
+Convert .grb file into text file with data (outfile.txt) and store metadata (metadata.txt)
+    wgrib file.grb -v | wgrib -text -i file.grb -o outfile.txt > metadata.txt
+
+
+

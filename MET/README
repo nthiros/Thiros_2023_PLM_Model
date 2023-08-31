@@ -1,0 +1,4 @@
+This directory generates the ParFlow-CLM forcing files from NLDAS-2 used in Thiros et. al., 2023 (GRL).
+The hourly NLDAS-2 text files from 1980-2021 are in the NLDAS_met_hourly directory.
+    Tools and notes to (re)download the NLDAS-2 data are in the NLDAS_utils directory.
+MET_smoothing_v3.py processes the NLDAS-2 data to the met* files, which are in formats needed for ParFlow-CLM
