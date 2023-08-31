@@ -1,0 +1,12 @@
+wy_2017_2021/*01683.pfb*
+wy_2017_2021/*porosity*
+wy_2017_2021/*perm*
+wy_2017_2021/*specific_storage*
+
+ecoslim_2017_2021/*00001683*
+ecoslim_2017_2021/wy2017_2021_eco_ET_output.txt
+ecoslim_2017_2021/wy2017_2021_eco_PET_balance.txt
+ecoslim_2017_2021/wy2017_2021_eco_flow_output.txt
+
+tfg.out.Perm.vtk
+

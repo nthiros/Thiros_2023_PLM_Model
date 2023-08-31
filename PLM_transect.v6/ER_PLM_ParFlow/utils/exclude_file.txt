@@ -1,0 +1,9 @@
+ecoslim_spinup_lng
+ecoslim_spinup
+ecoslim_2000_2016
+ecoslim_2017_2021/*.*
+ecoslim_2017_2021.mint
+wy_spinup_lng
+wy_spinup
+wy_2000_2016
+wy_2017_2021/*.*

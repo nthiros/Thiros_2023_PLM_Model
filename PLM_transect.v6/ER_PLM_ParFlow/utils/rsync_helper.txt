@@ -1,0 +1,7 @@
+rsync -auvz --exclude={'ecoslim_spinup_lng','ecoslim_spinup','ecoslim_2000_2016','ecoslim_2017_2021','ecoslim_2017_2021.mint','wy_spinup_lng','wy_spinup','wy_2000_2016','wy_2017_2021'}
+
+rsync -auvz --include='*01683.pfb*' --exclude='*.*' nt126396@skypilot.geol.umt.edu:projects/PLM_transect.v5/RunA.1/wy_2017_2021/ ./
+
+
+# From root dir ie. RunA.1
+rsync -auvz --include-from='../ER_PLM_ParFlow/utils/include_file.txt' --exclude-from='../ER_PLM_ParFlow/utils/exclude_file.txt' nt126396@skypilot.geol.umt.edu:projects/PLM_transect.v5/RunB.1/ ./
